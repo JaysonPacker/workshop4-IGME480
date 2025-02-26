@@ -2,7 +2,7 @@
 const places = [
     { name: "Rochester Abandoned Subway", latitude: 43.154722, longitude: -77.609722 },
     { name: "Washington Square Park", latitude: 43.1534, longitude: -77.6053 },
-    { name: "Wallace Library", latitude: 43.08480, longitude: -77.67604 }
+    { name: "Wallace Library", latitude: 43.083827, longitude: -77.676351 }
 ];
 
 const loadPlaces = () => {
@@ -12,7 +12,7 @@ const loadPlaces = () => {
         const entity = document.createElement("a-entity");
 
         entity.setAttribute("gps-entity-place", `latitude: ${place.latitude}; longitude: ${place.longitude}`);
-        entity.setAttribute("geometry", "primitive: sphere; radius: 1");
+        entity.setAttribute("geometry", "primitive: sphere; radius: 2");
         entity.setAttribute("material", "color: blue");
 
         const text = document.createElement("a-text");
